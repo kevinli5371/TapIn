@@ -4,105 +4,150 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Toro Toro",
-        "tiktokLink": "https://www.tiktok.com/@torotoro.ca/video/7484736896929647927",
-        "address": "636 Queen St W, Toronto, ON M6J 1E4"
+        "name": "Pink Mamma",
+        "tiktokLink": "https://www.tiktok.com/@folmerboersen/video/7177745062153948422",
+        "address": "20bis Rue de Douai, 75009 Paris, France"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4053,
-          43.6468
+          2.3339,
+          48.8828
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Toro Toro",
-        "tiktokLink": "https://www.tiktok.com/@logagm/video/7436868540080196920",
-        "address": "636 Queen St W, Toronto, ON M6J 1E4"
+        "name": "Le Relais de L'Entrecote",
+        "tiktokLink": "https://www.tiktok.com/@birkbites/video/7425647616983076129",
+        "address": "15 Rue Marbeuf, 75008 Paris, France"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4053,
-          43.6468
+          2.3074,
+          48.8698
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Sushi Masaki Saito",
-        "tiktokLink": "https://www.tiktok.com/@tryittoronto/video/7305233070418922757",
-        "address": "88 Avenue Rd, Toronto, ON M5R 2H2"
+        "name": "La Maison Rose",
+        "tiktokLink": "https://www.tiktok.com/@mia.in.france/video/7369528497838066976",
+        "address": "2 Rue de l'Abreuvoir, 75018 Paris, France"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3957,
-          43.6721
+          2.3391,
+          48.887
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Mizu Sushi",
-        "tiktokLink": "https://www.tiktok.com/discover/mizu-sushi-toronto",
-        "address": "3451 Yonge St, Toronto, ON M4N 2N2"
+        "name": "Le Cafe Marly",
+        "tiktokLink": "https://www.tiktok.com/@anneorion/video/7177745062153948422",
+        "address": "93 Rue de Rivoli, 75001 Paris, France"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4021,
-          43.728
+          2.3347,
+          48.8624
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Monkey Sushi",
-        "tiktokLink": "https://www.tiktok.com/tag/sushiintoronto",
-        "address": "493 Bloor St W, Toronto, ON M5S 1Y2"
+        "name": "Chez Janou",
+        "tiktokLink": "https://www.tiktok.com/@jacksdiningroom/video/7461261229991021855",
+        "address": "2 Rue Roger Verlomme, 75003 Paris, France"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4099,
-          43.6658
+          2.3666,
+          48.8605
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Kinoya Sushi Bar",
-        "tiktokLink": "https://www.tiktok.com/tag/sushiintoronto",
-        "address": "293 Palmerston Ave, Toronto, ON M6J 2J3"
+        "name": "L'Avenue",
+        "tiktokLink": "https://www.tiktok.com/@florancesnellers/video/7177745062153948422",
+        "address": "41 Avenue Montaigne, 75008 Paris, France"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4115,
-          43.6574
+          2.3069,
+          48.8667
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Dokkaebi",
-        "tiktokLink": "https://www.tiktok.com/tag/sushiintoronto",
-        "address": "2408 Yonge St, Toronto, ON M4P 2H4"
+        "name": "CoCo",
+        "tiktokLink": "https://www.tiktok.com/@victoriachmel/video/7425647616983076129",
+        "address": "Palais Garnier, 1 Place Jacques Rouché, 75009 Paris, France"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3983,
-          43.7106
+          2.3317,
+          48.8719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Le Relais de l'Entrecôte",
+        "tiktokLink": "https://www.tiktok.com/@beli_eats/video/7461261229991021855",
+        "address": "101 Boulevard du Montparnasse, 75006 Paris, France"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3277,
+          48.8429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "W Restaurant",
+        "tiktokLink": "https://www.tiktok.com/@chelszm/video/7425647616983076129",
+        "address": "13th Arrondissement, Paris, France (exact address not provided)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3559,
+          48.8266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Terra Bar À Vins",
+        "tiktokLink": "https://www.tiktok.com/@topjaw/video/7369528497838066976",
+        "address": "18 Rue de Courcelles, 75008 Paris, France"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3137,
+          48.8746
         ]
       }
     }
