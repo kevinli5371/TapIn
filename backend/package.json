@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.90.0"
+  },
+  "name": "tapin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinli5371/TapIn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinli5371/TapIn/issues"
+  },
+  "homepage": "https://github.com/kevinli5371/TapIn#readme",
+  "description": ""
+}
