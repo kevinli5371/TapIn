@@ -1,0 +1,20 @@
+.sidebar {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 20px;
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 10;
+    backdrop-filter: blur(6px);
+  }
+  
+  .dropdown {
+    color: black;
+  }
+  
