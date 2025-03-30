@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Select from "react-select";
 import TapInLogoWhite from "../assets/TapInLogoWhite.png";
 import "./sidebar.css";
@@ -6,12 +6,45 @@ import "./sidebar.css";
 const categoryOptions = [
   { value: "food", label: "Food" },
   { value: "museum", label: "Museum" },
-  { value: "nature", label: "Nature"},
+  { value: "nature", label: "Nature" },
   { value: "shopping", label: "Shopping" },
   { value: "stay", label: "Stay" },
 ];
 
 const Sidebar = () => {
+  const [location, setLocation] = useState("");
+  const [category, setCategory] = useState(null);
+  const [description, setDescription] = useState("");
+  const [priceRange, setPriceRange] = useState(1);
+
+  const handleSubmit = async () => {
+    const data = {
+      location,
+      category: category ? category.value : "",
+      description,
+      priceRange: `$${"$".repeat(priceRange)}`, // Convert range to dollar signs
+    };
+
+    try {
+      const response = await fetch("http://localhost:5001/api/update-json", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert("test-prompt.json updated successfully!");
+      } else {
+        alert("Failed to update test-prompt.json.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred while updating test-prompt.json.");
+    }
+  };
+
   return (
     <div className="sidebar">
       <img
@@ -25,6 +58,8 @@ const Sidebar = () => {
         type="text"
         placeholder="enter location..."
         className="input"
+        value={location}
+        onChange={(e) => setLocation(e.target.value)}
       />
 
       <Select
@@ -35,12 +70,12 @@ const Sidebar = () => {
           control: (base) => ({
             ...base,
             borderRadius: "999px",
-            height:  "42px",
+            height: "42px",
             paddingLeft: "5px",
             boxShadow: "none",
             fontSize: "14px",
           }),
-          placeholder: (base)=> ({
+          placeholder: (base) => ({
             ...base,
             color: "#888",
             fontWeight: "normal",
@@ -66,21 +101,33 @@ const Sidebar = () => {
               : "white",
           }),
         }}
+        value={category}
+        onChange={(selectedOption) => setCategory(selectedOption)}
       />
 
       <input
         type="text"
         placeholder="enter description..."
         className="input"
+        value={description}
+        onChange={(e) => setDescription(e.target.value)}
       />
 
       <div className="slider-container">
         <label className="slider-label">$</label>
-        <input type="range" min="1" max="3" step="1" className="slider" />
+        <input
+          type="range"
+          min="1"
+          max="3"
+          step="1"
+          className="slider"
+          value={priceRange}
+          onChange={(e) => setPriceRange(Number(e.target.value))}
+        />
         <label className="slider-label">$$$</label>
       </div>
-      
-      <button className="submit-button">
+
+      <button className="submit-button" onClick={handleSubmit}>
         Submit
       </button>
     </div>
