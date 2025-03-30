@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Poppy's Bagels",
+        "tiktokLink": "https://www.tiktok.com/@dinein519/video/7422772523948969222",
+        "address": "253 King St N, Waterloo, ON N2J 2Y8, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.5247,
+          43.4728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Agha Turkish Restaurant",
+        "tiktokLink": "https://www.tiktok.com/@curatedkw/video/7466838942789225734",
+        "address": "170 University Ave W, Waterloo, ON N2L 3E9, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.5384,
+          43.4728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "XO Sweet Treats",
+        "tiktokLink": "https://www.tiktok.com/@amnaxtahir/video/7469938653926591749",
+        "address": "258 King St N, Waterloo, ON N2J 2Y9, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.5248,
+          43.4733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crush Social Eatery",
+        "tiktokLink": "https://www.tiktok.com/@natashatheprocrastibaker/video/7345256095570595077",
+        "address": "225 The Boardwalk, Waterloo, ON N2T 0A5, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.5672,
+          43.4122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Back of House Pizza",
+        "tiktokLink": "https://www.tiktok.com/@dinein519/video/7421603881743944966",
+        "address": "140 University Ave W, Waterloo, ON N2L 6J3, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.5367,
+          43.4728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shelby's Shawarma",
+        "tiktokLink": "https://www.tiktok.com/@shelbyscanada/video/7440112093950463288",
+        "address": "16 King St S, Waterloo, ON N2J 1N8, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.5204,
+          43.4645
+        ]
+      }
+    }
+  ]
+}
