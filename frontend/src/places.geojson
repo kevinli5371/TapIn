@@ -4,75 +4,75 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "CF Toronto Eaton Centre",
-        "tiktokLink": "https://www.tiktok.com/@torontomet/video/7486627991624174903",
-        "address": "220 Yonge St, Toronto, ON M5B 2H1"
+        "name": "Chicken Plus",
+        "tiktokLink": "https://www.tiktok.com/@chickenplus.ca/video/7443990098942872888",
+        "address": "572 King St N, Waterloo, ON N2L 6L3, Canada"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3807,
-          43.6544
+          -80.5281,
+          43.4864
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Yorkdale Shopping Centre",
-        "tiktokLink": "https://www.tiktok.com/@elizabethvictoriaclark/video/7485562132134677765",
-        "address": "3401 Dufferin St, Toronto, ON M6A 2T9"
+        "name": "Penny's Hot Chicken",
+        "tiktokLink": "https://www.tiktok.com/@muckinnaround/video/7263190443540647173",
+        "address": "220 King St N, Waterloo, ON N2J 2Y7, Canada"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.452,
-          43.7247
+          -80.5228,
+          43.4722
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Pacific Mall",
-        "tiktokLink": "https://www.tiktok.com/@tryittoronto/video/7323399830498364678",
-        "address": "4300 Steeles Ave E, Markham, ON L3R 0Y5"
+        "name": "Juicy Birds",
+        "tiktokLink": "https://www.tiktok.com/@curatedkw/video/7267220943758527749",
+        "address": "258 King St N, Waterloo, ON N2J 2Y9, Canada"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3066,
-          43.8256
+          -80.5233,
+          43.4731
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Scarborough Town Centre",
-        "tiktokLink": "https://www.tiktok.com/travel/Toronto-22535865258127378",
-        "address": "300 Borough Dr, Scarborough, ON M1P 4P5"
+        "name": "Chick'n Cone",
+        "tiktokLink": "https://www.tiktok.com/@curatedkw/video/7328779461090954502",
+        "address": "255 King St N, Waterloo, ON N2J 4V2, Canada"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2579,
-          43.7756
+          -80.5235,
+          43.473
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Dufferin Mall",
-        "tiktokLink": "https://www.tiktok.com/@kylesalive/video/7483916798698589446",
-        "address": "900 Dufferin St, Toronto, ON M6H 4A9"
+        "name": "bb.q Chicken Waterloo Central",
+        "tiktokLink": "https://www.tiktok.com/@eatswithjules_/video/7420963217268067589",
+        "address": "170 University Ave W Unit 6, Waterloo, ON N2L 3E9, Canada"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4353,
-          43.6589
+          -80.5378,
+          43.4724
         ]
       }
     }

@@ -103,7 +103,7 @@ function Map({ geoJsonData }) {
                     }
                     
                     // Create and display the popup with the custom container
-                    new mapboxgl.Popup({ offset: [0, -15], maxWidth: '250px' })
+                    new mapboxgl.Popup({ offset: [0, -15], maxWidth: '350px' })
                         .setLngLat(feature.geometry.coordinates)
                         .setDOMContent(container)
                         .addTo(map);
@@ -151,7 +151,7 @@ function Map({ geoJsonData }) {
             {/* Add styling for TikTok embeds */}
             <style>{`
                 .tiktok-embed-container {
-                    width: 300px !important;
+                    width: 500px !important;
                     max-width: 100%;
                     overflow: hidden;
                     margin-top: 10px;
