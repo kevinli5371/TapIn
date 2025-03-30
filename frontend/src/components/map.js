@@ -64,8 +64,8 @@ function Map({ geoJsonData }) {
             new mapboxgl.Popup({ offset: [0, -15] })
                 .setLngLat(feature.geometry.coordinates)
                 .setHTML(`
-                    <h3>${feature.properties.title || 'Live Point'}</h3>
-                    <p>${feature.properties.description || 'No description available'}</p>
+                    <h3>${feature.properties.name || 'Live Point'}</h3>
+                    <p>${feature.properties.tiktokLink || 'No description available'}</p>
                 `)
                 .addTo(map);
         });
