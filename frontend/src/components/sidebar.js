@@ -1,17 +1,12 @@
 import React from "react";
+import Select from "react-select";
 import TapInLogoWhite from "../assets/TapInLogoWhite.png";
 import "./sidebar.css";
-
-const locationOptions = [
-  { value: "new-york", label: "New York" },
-  { value: "new-jersey", label: "New Jersey" },
-  { value: "philadelphia", label: "Philadelphia" },
-  { value: "chicago", label: "Chicago" },
-];
 
 const categoryOptions = [
   { value: "food", label: "Food" },
   { value: "museum", label: "Museum" },
+  { value: "park", label: "Park" },
   { value: "shopping", label: "Shopping" },
   { value: "stay", label: "Stay" },
 ];
@@ -24,26 +19,31 @@ const Sidebar = () => {
         alt="TapInLogo"
         height="67px"
         width="199px"
-        style={{ opacity: 1.43 }}
       />
 
       <input
-        options={locationOptions}
+        type="text"
         placeholder="enter location..."
-        className="dropdown"
+        className="input"
+      />
+
+      <Select
+        options={categoryOptions}
+        placeholder="enter category..."
+        classNamePrefix="dropdown"
       />
 
       <input
-        options={categoryOptions}
-        placeholder="enter category..."
-        className="dropdown"
+        type="text"
+        placeholder="enter description..."
+        className="input"
       />
 
-      <input
-        options={categoryOptions}
-        placeholder="enter category..."
-        className="dropdown"
-      />
+      <div className="slider-container">
+        <label className="slider-label">$</label>
+        <input type="range" min="1" max="3" step="1" className="slider" />
+        <label className="slider-label">$$$</label>
+      </div>
     </div>
   );
 };
