@@ -4,7 +4,7 @@ import TapInLogoWhite from './assets/TapInLogoWhite.png';
 import Sidebar from './components/sidebar';
 
 import React, { useState } from 'react';
-import data from './test.geojson';
+import geo_data from './places.geojson';
 // import axios from 'axios';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <img src={TapInLogoWhite} alt='TapInLogo' height='67px' width='199px' style={ {opacity: 1.43} }/>
       </div>
       <Sidebar />
-      <Map geoJsonData={data} />
+      <Map geoJsonData={geo_data} />
     </div>
   );
 }
