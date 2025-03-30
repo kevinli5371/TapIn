@@ -4,150 +4,75 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Pink Mamma",
-        "tiktokLink": "https://www.tiktok.com/@folmerboersen/video/7177745062153948422",
-        "address": "20bis Rue de Douai, 75009 Paris, France"
+        "name": "CF Toronto Eaton Centre",
+        "tiktokLink": "https://www.tiktok.com/@torontomet/video/7486627991624174903",
+        "address": "220 Yonge St, Toronto, ON M5B 2H1"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3339,
-          48.8828
+          -79.3807,
+          43.6544
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Le Relais de L'Entrecote",
-        "tiktokLink": "https://www.tiktok.com/@birkbites/video/7425647616983076129",
-        "address": "15 Rue Marbeuf, 75008 Paris, France"
+        "name": "Yorkdale Shopping Centre",
+        "tiktokLink": "https://www.tiktok.com/@elizabethvictoriaclark/video/7485562132134677765",
+        "address": "3401 Dufferin St, Toronto, ON M6A 2T9"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3074,
-          48.8698
+          -79.452,
+          43.7247
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "La Maison Rose",
-        "tiktokLink": "https://www.tiktok.com/@mia.in.france/video/7369528497838066976",
-        "address": "2 Rue de l'Abreuvoir, 75018 Paris, France"
+        "name": "Pacific Mall",
+        "tiktokLink": "https://www.tiktok.com/@tryittoronto/video/7323399830498364678",
+        "address": "4300 Steeles Ave E, Markham, ON L3R 0Y5"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3391,
-          48.887
+          -79.3066,
+          43.8256
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Le Cafe Marly",
-        "tiktokLink": "https://www.tiktok.com/@anneorion/video/7177745062153948422",
-        "address": "93 Rue de Rivoli, 75001 Paris, France"
+        "name": "Scarborough Town Centre",
+        "tiktokLink": "https://www.tiktok.com/travel/Toronto-22535865258127378",
+        "address": "300 Borough Dr, Scarborough, ON M1P 4P5"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3347,
-          48.8624
+          -79.2579,
+          43.7756
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Chez Janou",
-        "tiktokLink": "https://www.tiktok.com/@jacksdiningroom/video/7461261229991021855",
-        "address": "2 Rue Roger Verlomme, 75003 Paris, France"
+        "name": "Dufferin Mall",
+        "tiktokLink": "https://www.tiktok.com/@kylesalive/video/7483916798698589446",
+        "address": "900 Dufferin St, Toronto, ON M6H 4A9"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3666,
-          48.8605
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "L'Avenue",
-        "tiktokLink": "https://www.tiktok.com/@florancesnellers/video/7177745062153948422",
-        "address": "41 Avenue Montaigne, 75008 Paris, France"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3069,
-          48.8667
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "CoCo",
-        "tiktokLink": "https://www.tiktok.com/@victoriachmel/video/7425647616983076129",
-        "address": "Palais Garnier, 1 Place Jacques Rouché, 75009 Paris, France"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3317,
-          48.8719
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Le Relais de l'Entrecôte",
-        "tiktokLink": "https://www.tiktok.com/@beli_eats/video/7461261229991021855",
-        "address": "101 Boulevard du Montparnasse, 75006 Paris, France"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3277,
-          48.8429
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "W Restaurant",
-        "tiktokLink": "https://www.tiktok.com/@chelszm/video/7425647616983076129",
-        "address": "13th Arrondissement, Paris, France (exact address not provided)"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3559,
-          48.8266
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Terra Bar À Vins",
-        "tiktokLink": "https://www.tiktok.com/@topjaw/video/7369528497838066976",
-        "address": "18 Rue de Courcelles, 75008 Paris, France"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3137,
-          48.8746
+          -79.4353,
+          43.6589
         ]
       }
     }

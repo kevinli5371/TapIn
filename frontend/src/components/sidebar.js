@@ -16,6 +16,7 @@ const Sidebar = () => {
   const [category, setCategory] = useState(null);
   const [description, setDescription] = useState("");
   const [priceRange, setPriceRange] = useState(1);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async () => {
     const data = {
@@ -25,7 +26,10 @@ const Sidebar = () => {
       priceRange: `$${"$".repeat(priceRange)}`, // Convert range to dollar signs
     };
 
+    setLoading(true); // Start loading
+
     try {
+      // Update test-prompt.json
       const response = await fetch("http://localhost:5001/api/update-json", {
         method: "POST",
         headers: {
@@ -34,30 +38,28 @@ const Sidebar = () => {
         body: JSON.stringify(data),
       });
 
-      if (response.ok) {
-        alert("test-prompt.json updated successfully!");
-      } else {
+      if (!response.ok) {
         alert("Failed to update test-prompt.json.");
+        setLoading(false); // Stop loading
+        return;
+      }
+
+      // Run test.js
+      const runTestResponse = await fetch("http://localhost:5001/api/run-test", {
+        method: "POST",
+      });
+
+      if (runTestResponse.ok) {
+        const result = await runTestResponse.json();
+        console.log(`Test.js execution: ${result.message}`);
+      } else {
+        alert("Failed to run test.js file.");
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("An error occurred while updating test-prompt.json.");
-    }
-    // Add functionality to run the test.js file
-    try {
-      const runTestResponse = await fetch("http://localhost:5001/api/run-test", {
-      method: "POST",
-      });
-      
-      if (runTestResponse.ok) {
-      const result = await runTestResponse.json();
-      alert(`Test.js execution: ${result.message}`);
-      } else {
-      alert("Failed to run test.js file");
-      }
-    } catch (error) {
-      console.error("Error running test.js:", error);
-      alert("An error occurred while running test.js file.");
+      alert("An error occurred while processing your request.");
+    } finally {
+      setLoading(false); // Stop loading
     }
   };
 
@@ -143,9 +145,16 @@ const Sidebar = () => {
         <label className="slider-label">$$$</label>
       </div>
 
-      <button className="submit-button" onClick={handleSubmit}>
-        Submit
+      <button className="submit-button" onClick={handleSubmit} disabled={loading}>
+        {loading ? "Processing..." : "Submit"}
       </button>
+
+      {loading && (
+        <div className="loading-spinner">
+          <div className="spinner"></div>
+          <p>Processing your request...</p>
+        </div>
+      )}
     </div>
   );
 };
