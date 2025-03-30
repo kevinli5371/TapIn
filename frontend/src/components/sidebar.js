@@ -6,7 +6,7 @@ import "./sidebar.css";
 const categoryOptions = [
   { value: "food", label: "Food" },
   { value: "museum", label: "Museum" },
-  { value: "park", label: "Park" },
+  { value: "nature", label: "Nature"},
   { value: "shopping", label: "Shopping" },
   { value: "stay", label: "Stay" },
 ];
@@ -31,6 +31,41 @@ const Sidebar = () => {
         options={categoryOptions}
         placeholder="enter category..."
         classNamePrefix="dropdown"
+        styles={{
+          control: (base) => ({
+            ...base,
+            borderRadius: "999px",
+            height:  "42px",
+            paddingLeft: "5px",
+            boxShadow: "none",
+            fontSize: "14px",
+          }),
+          placeholder: (base)=> ({
+            ...base,
+            color: "#888",
+            fontWeight: "normal",
+          }),
+          singleValue: (base) => ({
+            ...base,
+            color: "#010101",
+            fontSize: "14px",
+          }),
+          menu: (base) => ({
+            ...base,
+            borderRadius: "12px",
+            overflow: "hidden",
+          }),
+          option: (base, state) => ({
+            ...base,
+            color: "#010101",
+            fontSize: "14px",
+            backgroundColor: state.isFocused
+              ? "#f0f0f0"
+              : state.isSelected
+              ? "#e0e0e0"
+              : "white",
+          }),
+        }}
       />
 
       <input
@@ -44,6 +79,10 @@ const Sidebar = () => {
         <input type="range" min="1" max="3" step="1" className="slider" />
         <label className="slider-label">$$$</label>
       </div>
+      
+      <button className="submit-button">
+        Submit
+      </button>
     </div>
   );
 };
