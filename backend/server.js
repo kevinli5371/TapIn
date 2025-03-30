@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const fs = require("fs");
 const path = require("path");
+const { exec } = require("child_process"); // Import child_process to execute scripts
 const recommendRoute = require('./routes/prompt');
 const geojsonRoute = require('./routes/geojson'); // Import the new route
 
@@ -23,7 +24,7 @@ app.post("/api/update-json", (req, res) => {
   const { location, category, description, priceRange } = req.body;
 
   // Format the data as a single string
-  const formattedData = `${location} ${category} ${description} ${priceRange}`;
+  const formattedData = `${location}; ${category}; ${description}`;
 
   // Write the data to test-prompt.json
   const outputDir = __dirname;
@@ -38,6 +39,25 @@ app.post("/api/update-json", (req, res) => {
       return res.status(500).json({ error: "Failed to save file" });
     }
     res.status(200).json({ message: "File updated successfully" });
+  });
+});
+
+// Endpoint to run test.js
+app.post("/api/run-test", (req, res) => {
+  // Execute the test.js file using Node.js
+  exec("node test.js", { cwd: __dirname }, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error executing test.js: ${error.message}`);
+      return res.status(500).json({ message: "Failed to execute test.js", error: error.message });
+    }
+
+    if (stderr) {
+      console.error(`Error output from test.js: ${stderr}`);
+      return res.status(500).json({ message: "Error in test.js execution", error: stderr });
+    }
+
+    console.log(`Output from test.js: ${stdout}`);
+    res.status(200).json({ message: "test.js executed successfully", output: stdout });
   });
 });
 

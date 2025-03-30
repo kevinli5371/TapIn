@@ -10,7 +10,7 @@ router.post('/', async (req, res) => {
   const { prompt } = req.body;
 
   const detailedPrompt = `
-Please provide 5-30 TikTok video links about the prompt: ${prompt}.
+Please provide 10-30 TikTok video links about the prompt: ${prompt}.
 For each recommendation, include:
 - The restaurant name
 - The direct TikTok video URL
