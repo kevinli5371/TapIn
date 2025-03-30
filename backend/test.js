@@ -77,7 +77,17 @@ const req = http.request(options, (res) => {
                 });
                 
                 // Write GeoJSON to file
-                fs.writeFileSync('places.geojson', JSON.stringify(geoJson, null, 2));
+                const outputDir = '../frontend/src'; // Change this to your desired directory
+                
+                // Create the directory if it doesn't exist
+                if (!fs.existsSync(outputDir)) {
+                    fs.mkdirSync(outputDir, { recursive: true });
+                }
+                
+                // Write the file to the specified directory
+                const outputPath = `${outputDir}/places.geojson`;
+                fs.writeFileSync(outputPath, JSON.stringify(geoJson, null, 2));
+                console.log(`GeoJSON file created: ${outputPath}`);
                 console.log('GeoJSON file created: places.geojson');
             }
         } catch (err) {
@@ -92,3 +102,28 @@ req.on('error', (error) => {
 
 req.write(postData);
 req.end();
+
+// const fs = require('fs');
+// const http = require('http');
+
+// // Remove node-fetch since you're using http.request
+// // const fetch = require('node-fetch');
+
+// const data = JSON.parse(fs.readFileSync('./test-prompt.json', 'utf8'));
+// const postData = JSON.stringify(data);
+
+// fetch('http://localhost:5001/api/geojson', {
+//     // method: 'GET',
+//     method: 'POST',
+//     headers: {
+//         'Content-Type': 'application/json'
+//     },
+//     body: postData
+// })
+// .then(response => response.json())
+// .then(data => {
+//     console.log('Success:', data);
+// })
+// .catch((error) => {
+//     console.error('Error:', error);
+// });
