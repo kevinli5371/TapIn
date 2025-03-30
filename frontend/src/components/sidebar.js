@@ -43,6 +43,22 @@ const Sidebar = () => {
       console.error("Error:", error);
       alert("An error occurred while updating test-prompt.json.");
     }
+    // Add functionality to run the test.js file
+    try {
+      const runTestResponse = await fetch("http://localhost:5001/api/run-test", {
+      method: "POST",
+      });
+      
+      if (runTestResponse.ok) {
+      const result = await runTestResponse.json();
+      alert(`Test.js execution: ${result.message}`);
+      } else {
+      alert("Failed to run test.js file");
+      }
+    } catch (error) {
+      console.error("Error running test.js:", error);
+      alert("An error occurred while running test.js file.");
+    }
   };
 
   return (

@@ -14,9 +14,9 @@ function Map({ geoJsonData }) {
             container: 'map',
             style: 'mapbox://styles/ansnn/cm8v53tl6007901s09lck52di',
             // style: 'mapbox://styles/mapbox/streets-v12',
-            center: [-87.6298, 41.8781], // Chicago, Illinois coordinates [lng, lat]
-            zoom: 14.5, // Initial zoom level
-            pitch: 45, // Initial pitch (tilt) angle in degrees
+            center: [-79.3832, 43.6532], // Toronto, Ontario coordinates [lng, lat]
+            zoom: 5, // Initial zoom level
+            // pitch: 45, // Initial pitch (tilt) angle in degrees
         });
 
         if (map && map.getSource('live-points')) {

@@ -4,75 +4,105 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Poppy's Bagels",
-        "tiktokLink": "https://www.tiktok.com/@dinein519/video/7422772523948969222",
-        "address": "256 King Street North, Waterloo, ON N2J 2Y9, Canada"
+        "name": "Toro Toro",
+        "tiktokLink": "https://www.tiktok.com/@torotoro.ca/video/7484736896929647927",
+        "address": "636 Queen St W, Toronto, ON M6J 1E4"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.5257,
-          43.4743
+          -79.4053,
+          43.6468
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Agha Turkish Restaurant",
-        "tiktokLink": "https://www.tiktok.com/@curatedkw/video/7466838942789225734",
-        "address": "130 Columbia Street West, Waterloo, ON N2L 3L1, Canada"
+        "name": "Toro Toro",
+        "tiktokLink": "https://www.tiktok.com/@logagm/video/7436868540080196920",
+        "address": "636 Queen St W, Toronto, ON M6J 1E4"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.5415,
-          43.4751
+          -79.4053,
+          43.6468
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Shelby's Shawarma",
-        "tiktokLink": "https://www.tiktok.com/@shelbyscanada/video/7440112093950463288",
-        "address": "150 University Avenue West, Waterloo, ON N2L 3E4, Canada"
+        "name": "Sushi Masaki Saito",
+        "tiktokLink": "https://www.tiktok.com/@tryittoronto/video/7305233070418922757",
+        "address": "88 Avenue Rd, Toronto, ON M5R 2H2"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.5382,
-          43.4728
+          -79.3957,
+          43.6721
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "XO Sweet Treats",
-        "tiktokLink": "https://www.tiktok.com/@amnaxtahir/video/7469938653926591749",
-        "address": "65 University Avenue East, Waterloo, ON N2J 2V9, Canada"
+        "name": "Mizu Sushi",
+        "tiktokLink": "https://www.tiktok.com/discover/mizu-sushi-toronto",
+        "address": "3451 Yonge St, Toronto, ON M4N 2N2"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.5196,
-          43.4689
+          -79.4021,
+          43.728
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Crush Social Eatery",
-        "tiktokLink": "https://www.tiktok.com/@natashatheprocrastibaker/video/7345256095570595077",
-        "address": "180 King Street South, Waterloo, ON N2J 1P8, Canada"
+        "name": "Monkey Sushi",
+        "tiktokLink": "https://www.tiktok.com/tag/sushiintoronto",
+        "address": "493 Bloor St W, Toronto, ON M5S 1Y2"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.5214,
-          43.4625
+          -79.4099,
+          43.6658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kinoya Sushi Bar",
+        "tiktokLink": "https://www.tiktok.com/tag/sushiintoronto",
+        "address": "293 Palmerston Ave, Toronto, ON M6J 2J3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4115,
+          43.6574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dokkaebi",
+        "tiktokLink": "https://www.tiktok.com/tag/sushiintoronto",
+        "address": "2408 Yonge St, Toronto, ON M4P 2H4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3983,
+          43.7106
         ]
       }
     }
